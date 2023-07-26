@@ -11,7 +11,7 @@ mkdir ./airflow/dags
 mkdir ./airflow/plugins
 
 # Запустить команду
-docker-compose up -d
+docker compose up -d
 
 # Проверить подлючение к Airflow
 http://localhost:8080
@@ -33,4 +33,4 @@ database = test
 
 # Завершить работу Airflow
 
-docker-compose down
+docker compose down
