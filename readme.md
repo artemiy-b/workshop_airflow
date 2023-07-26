@@ -11,13 +11,13 @@ mkdir ./airflow/dags
 mkdir ./airflow/plugins
 
 # Запустить команду
-docker-compose up
+docker-compose up -d
 
 # Проверить подлючение к Airflow
 http://localhost:8080
 airflow / airflow 
 
-# Проверить запуск python скрипта - запускаем из отдельного окошка терминала как python файл
+# Проверить запуск python скрипта
 apt update -y
 sudo apt install -y python3-dev python3-pip libpq-dev gcc
 sudo pip install psycopg2
@@ -32,5 +32,5 @@ password = password
 database = test
 
 # Завершить работу Airflow
-В другом окне в этой же директории выполнить команду:
+
 docker-compose down
